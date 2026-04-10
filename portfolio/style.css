@@ -1,0 +1,143 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #1f1c2c, #928dab);
+    color: white;
+    transition: 0.4s;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeDown 1s ease;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.3rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* Sections (Glass Effect) */
+section {
+    margin: 30px auto;
+    width: 80%;
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    animation: fadeUp 1s ease;
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-8px) scale(1.01);
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Skills */
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+li:hover {
+    background: #00c6ff;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Inputs */
+input {
+    width: 220px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #00c6ff;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0072ff;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark Mode */
+.dark {
+    background: #0f2027;
+}
+
+.dark section {
+    background: rgba(0,0,0,0.5);
+}
+
+.dark button {
+    background: #ffcc00;
+}
